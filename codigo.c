@@ -843,15 +843,16 @@ int main(int argc, const char * argv[]) {
         case 9:   //Recuperação dos RRN dos registros logicamente removidos.
             recuperarRemovidos();
             break;
-      	case 10:
+      	case 10: //Inserir junto no indice da Arvore-B.
+            insereArvore();
         	break;
-      	case 11:
+      	case 11: //Parte 6 + arvore
         	break;
-      	case 12:
+      	case 12: //Recuperar registro a partir da Arvore-B.
       	  	break;
-      	case 13:
+      	case 13: //Remover o registro a partir da Arvore-B. 
         	break;
-      	case 14:
+      	case 14: //Atualizar o registro a partir da Arvore-B.
        	 	break;
         
         default :   //Caso seja um valor diferente dos estabelecidos.
