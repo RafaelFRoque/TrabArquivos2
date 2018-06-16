@@ -56,6 +56,15 @@ void leCampoFixo(FILE *fe, char *data){
     fgetc(fe); 
 }
 
+//Função [10]:
+void insercaoArvore(char *entrada){
+    char status = '0';
+    int noRaiz;
+    int altura;
+    int ultimoRRN;
+}
+
+
 //Função [1]: 
 void insercao(char *entrada){ 
     //Variaveis do cabeçalho.
@@ -726,6 +735,7 @@ void recuperarRemovidos(){
         printf("Falha no processamento do arquivo.\n");
 }
 
+
 int main(int argc, const char * argv[]) {
     int op=atoi(argv[1]); //É definida a operação que será executada.
     char *aux;  //Variáveis que serão utilizadas para manipular os dados recebidos do terminal, para que seja possível passá-los para as funções.
@@ -835,16 +845,16 @@ int main(int argc, const char * argv[]) {
             free(d.nomeEscola);
             free(d.municipio);
             free(d.endereco);
-           
             break;
-        case 8:   //Desfragmentação do arquivo de dados.
+        case 8:  //Desfragmentação do arquivo de dados.
             desfragmenta();
             break;
-        case 9:   //Recuperação dos RRN dos registros logicamente removidos.
+        case 9:  //Recuperação dos RRN dos registros logicamente removidos.
             recuperarRemovidos();
             break;
       	case 10: //Inserir junto no indice da Arvore-B.
-            insereArvore();
+            aux = (char*)argv[2];
+            insercaoArvore(aux);
         	break;
       	case 11: //Parte 6 + arvore
         	break;
